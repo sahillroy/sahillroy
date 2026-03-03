@@ -1,16 +1,14 @@
-<table>
-<tr>
-<td width="60%" valign="top">
+<div style="display: flex; align-items: flex-start; justify-content: space-between;">
+
+<div style="width: 60%;">
 Hi, I’m Sahil Roy  <br><br>I’m a Computer Science student who’s genuinely curious about how things work — especially when it comes to Machine Learning, Software Development, and Competitive Programming.<br><br>I enjoy building small projects, solving algorithmic problems, breaking things, fixing them, and learning in the process. Whether it’s writing clean code, improving problem-solving skills, or experimenting with ML models, I like turning ideas into something real.
-</td>
+</div>
 
-<td width="40%" align="center" valign="center">
-
+<div style="width: 35%; text-align: right;">
 <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExNzY2MzEyNHVuN3V6eHRxbWhpbHZjZGc4ZnhwOTQyNXh4dXoyN2VjMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/H03PuVdwREB21ANkLX/giphy.gif" width="300"/>
+</div>
 
-
-</tr>
-</table>
+</div>
 
 
 ## 🌐 Socials:
