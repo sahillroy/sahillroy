@@ -1,21 +1,21 @@
-<svg width="1280" height="280" viewBox="0 0 1280 280" xmlns="http://www.w3.org/2000/svg" font-family="Consolas, monospace">
+<svg width="1150" height="280" viewBox="0 0 1150 280" xmlns="http://www.w3.org/2000/svg" font-family="Consolas, monospace">
   <style>
-    .reveal { stroke-dasharray: 1220; stroke-dashoffset: 1220; animation: draw 1.3s cubic-bezier(.4,0,.2,1) .3s forwards; }
+    .reveal { stroke-dasharray: 1150; stroke-dashoffset: 1150; animation: draw 1.3s cubic-bezier(.4,0,.2,1) .3s forwards; }
     @keyframes draw { to { stroke-dashoffset: 0; } }
     @media (prefers-reduced-motion: reduce) { .reveal { animation: none; stroke-dashoffset: 0; } }
   </style>
 
-  <rect width="1280" height="280" fill="#0d1117"/>
-  <text x="30" y="38" font-size="15" letter-spacing="2" fill="#8b8b93">PORTFOLIO — INDEX № 001</text>
-  <text x="1250" y="38" font-size="15" letter-spacing="2" fill="#8b8b93" text-anchor="end">NAGPUR, IN — 21.14° N</text>
+  <rect width="1150" height="280" fill="#0d1117"/>
+  <text x="0" y="38" font-size="15" letter-spacing="2" fill="#8b8b93">PORTFOLIO — INDEX № 001</text>
+  <text x="1150" y="38" font-size="15" letter-spacing="2" fill="#8b8b93" text-anchor="end">NAGPUR, IN — 21.14° N</text>
 
-  <line class="reveal" x1="30" y1="54" x2="1250" y2="54" stroke="#c9c9d1" stroke-width="1"/>
+  <line class="reveal" x1="0" y1="54" x2="1150" y2="54" stroke="#c9c9d1" stroke-width="1"/>
 
-  <text x="30" y="145" font-size="66" fill="#ffffff" font-weight="bold">Sahil Roy</text>
-  <text x="30" y="194" font-size="22" fill="#c9c9d1">ML Engineer &amp; Full-Stack Developer — Nagpur, India.</text>
+  <text x="0" y="145" font-size="66" fill="#ffffff" font-weight="bold">Sahil Roy</text>
+  <text x="0" y="194" font-size="22" fill="#c9c9d1">ML Engineer &amp; Full-Stack Developer — Nagpur, India.</text>
 
-  <text x="30" y="230" font-size="16" fill="#9a9aa3">focus &#8250;  machine learning · full-stack systems · secure infrastructure</text>
-  <text x="30" y="254" font-size="16" fill="#9a9aa3">open to &#8250;  internships (remote) · collaboration · research</text>
+  <text x="0" y="230" font-size="16" fill="#9a9aa3">focus &#8250;  machine learning · full-stack systems · secure infrastructure</text>
+  <text x="0" y="254" font-size="16" fill="#9a9aa3">open to &#8250;  internships (remote) · collaboration · research</text>
 
-  <line class="reveal" x1="30" y1="268" x2="1250" y2="268" stroke="#c9c9d1" stroke-width="1"/>
+  <line class="reveal" x1="0" y1="268" x2="1150" y2="268" stroke="#c9c9d1" stroke-width="1"/>
 </svg>
