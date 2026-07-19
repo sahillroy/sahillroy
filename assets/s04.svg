@@ -8,7 +8,6 @@
     .f { opacity: 0; animation: f .8s ease .1s forwards; }
     @keyframes f { to { opacity: 1; } }
     @media (prefers-reduced-motion: reduce) { .draw,.f { animation: none; } .draw { stroke-dashoffset: 0; } .f { opacity: 1; } }
-      :root { --bone: #000000; --muted: #000000; --rule: #000000; --accent: #000000; --ghost: #000000; }
   </style>
   <g class="f">
     <text class="mono" x="48" y="68" font-size="52" fill="var(--ghost)">04</text>
