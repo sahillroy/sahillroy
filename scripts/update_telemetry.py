@@ -158,10 +158,53 @@ def get_repo_stats():
     return {"REPO_COUNT": str(len(repos)), "STARS": str(total_stars)}
 
 
+def build_contribution_chart(days):
+    last30 = days[-30:] if len(days) >= 30 else days
+    values = [c for _, c in last30]
+    n = len(last30)
+    max_v = max(values) if values and max(values) > 0 else 1
+
+    x0, x1 = 60, 1090
+    y_base, y_top = 900, 740
+    step = (x1 - x0) / (n - 1) if n > 1 else 0
+
+    def y_for(v):
+        return y_base - (v / max_v) * (y_base - y_top)
+
+    points = " ".join(f"{x0 + i*step:.1f},{y_for(v):.1f}" for i, v in enumerate(values))
+
+    grid = []
+    for frac in (0, 0.5, 1.0):
+        y = y_for(frac * max_v)
+        grid.append(f'<line x1="{x0}" y1="{y:.1f}" x2="{x1}" y2="{y:.1f}" stroke="var(--rule)" stroke-width="1" stroke-dasharray="3 3" opacity=".35"/>')
+        grid.append(f'<text fill="var(--dim)" x="{x0 - 15}" y="{y + 4:.1f}" font-size="10" text-anchor="end">{round(frac * max_v)}</text>')
+
+    day_labels = []
+    label_every = max(1, n // 8)
+    for i, (d, _) in enumerate(last30):
+        if i % label_every == 0 or i == n - 1:
+            x = x0 + i * step
+            day_short = datetime.date.fromisoformat(d).strftime("%-d")
+            day_labels.append(f'<text fill="var(--dim)" x="{x:.1f}" y="{y_base + 20}" font-size="9" text-anchor="middle">{day_short}</text>')
+
+    last_x = x0 + (n - 1) * step
+    last_y = y_for(values[-1]) if values else y_base
+
+    parts = grid + [
+        f'<line x1="{x0}" y1="{y_base}" x2="{x1}" y2="{y_base}" stroke="var(--rule)" stroke-width="1"/>',
+        f'<polyline points="{points}" stroke="var(--accent)" stroke-width="1.5" fill="none"/>',
+        f'<circle cx="{last_x:.1f}" cy="{last_y:.1f}" r="3" fill="var(--accent)"/>',
+    ] + day_labels + [
+        f'<text fill="var(--dim)" x="{x0}" y="{y_base + 44}" font-size="11" letter-spacing="1.5">last 30 days</text>',
+    ]
+    return "\n    ".join(parts)
+
+
 def main():
     days = get_all_contribution_days()
     values = compute_streaks(days)
     values.update(get_repo_stats())
+    values["CONTRIB_CHART"] = build_contribution_chart(days)
 
     template_path = os.path.join(os.path.dirname(__file__), "..", "assets", "telemetry.template.svg")
     output_path = os.path.join(os.path.dirname(__file__), "..", "assets", "telemetry.svg")
