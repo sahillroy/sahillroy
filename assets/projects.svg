@@ -12,7 +12,6 @@
     .r1{animation-delay:.05s}.r2{animation-delay:.10s}.r3{animation-delay:.15s}.r4{animation-delay:.20s}.r5{animation-delay:.25s}
     @media (prefers-reduced-motion:reduce) { .row { animation:none; opacity:1; } }
   </style>
-
   <g class="mono">
     <g class="row r1" transform="translate(0 20)">
       <text class="title" x="48" y="24">01 / MODIJI</text>
