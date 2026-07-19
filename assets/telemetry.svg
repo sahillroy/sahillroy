@@ -14,10 +14,10 @@
   <line x1="48" y1="60" x2="410" y2="60" stroke="var(--rule)" opacity=".5"/>
   <text class="mono rise a1" x="48" y="100" font-size="14" fill="var(--muted)">Public repositories</text>
   <text class="mono rise a1" x="410" y="100" font-size="14" fill="var(--bone)" text-anchor="end">6</text>
-  <text class="mono rise a1" x="48" y="140" font-size="14" fill="var(--muted)">Primary languages</text>
-  <text class="mono rise a1" x="410" y="140" font-size="14" fill="var(--bone)" text-anchor="end">Python / C++</text>
-  <text class="mono rise a1" x="48" y="180" font-size="14" fill="var(--muted)">Focus area</text>
-  <text class="mono rise a1" x="410" y="180" font-size="14" fill="var(--bone)" text-anchor="end">SWE / ML</text>
+  <text class="mono rise a1" x="48" y="140" font-size="14" fill="var(--muted)">Total contributions</text>
+  <text class="mono rise a1" x="410" y="140" font-size="14" fill="var(--bone)" text-anchor="end">308</text>
+  <text class="mono rise a1" x="48" y="180" font-size="14" fill="var(--muted)">Longest streak</text>
+  <text class="mono rise a1" x="410" y="180" font-size="14" fill="var(--bone)" text-anchor="end">9 days</text>
 
   <rect class="panel rise a2" x="460" y="10" width="490" height="270"/>
   <text class="mono rise a2" x="484" y="46" font-size="13" letter-spacing="2" fill="var(--bone)">LIVE DATA</text>
