@@ -7,9 +7,8 @@
     @keyframes rise { from { opacity:0;transform:translateY(8px); } to { opacity:1;transform:translateY(0); } }
     .a1{animation-delay:.1s} .a2{animation-delay:.2s} .a3{animation-delay:.35s} .a4{animation-delay:.5s} .a5{animation-delay:.65s}
     @media (prefers-reduced-motion: reduce) { .rise { animation: none; opacity: 1; } }
-      :root { --bone: #000000; --muted: #000000; --rule: #000000; --accent: #000000; }
   </style>
-  <text class="mono rise a1" x="48" y="32" font-size="16" fill="var(--bone)">Final Year CS student, genuinely curious about how things work.</text>
+  <text class="mono rise a1" x="48" y="32" font-size="16" fill="var(--bone)">Final year CS student at Shri Ramdeobaba College Of Engineering And Management.</text>
   <text class="mono rise a2" x="48" y="60" font-size="16" fill="var(--bone)">passionate about Software Development, secure systems, and Machine Learning.</text>
   <text class="mono rise a3" x="48" y="88" font-size="15" fill="var(--muted)">I enjoy building small projects, solving algorithmic problems, and turning ideas into something real.</text>
   <line class="rise a4" x1="48" y1="116" x2="952" y2="116" stroke="var(--rule)" stroke-width="1" opacity=".5"/>
