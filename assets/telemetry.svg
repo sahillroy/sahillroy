@@ -1,28 +1,67 @@
-<svg viewBox="0 0 1000 300" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Telemetry — repository overview and live data">
+<svg width="1150" height="700" viewBox="0 0 1150 700" xmlns="http://www.w3.org/2000/svg" font-family="Consolas, monospace">
   <style>
-    :root { --bone: #444444; --muted: #888888; --rule: #C0C0C0; }
-    @media (prefers-color-scheme: dark) { :root { --bone: #DDDDDD; --muted: #777777; --rule: #444444; } }
-    .mono { font-family: ui-monospace, "SFMono-Regular", "SF Mono", Menlo, Consolas, "Liberation Mono", monospace; }
-    .panel { fill:none; stroke:var(--rule); stroke-width:1; }
     .rise { opacity: 0; animation: rise .6s cubic-bezier(.2,.7,.2,1) forwards; }
-    @keyframes rise { from { opacity:0;transform:translateY(6px); } to { opacity:1;transform:translateY(0); } }
-    .a1{animation-delay:.1s} .a2{animation-delay:.25s}
-    @media (prefers-reduced-motion: reduce) { .rise { animation: none; opacity: 1; } }
+    @keyframes rise { from{opacity:0;transform:translateY(6px)} to{opacity:1;transform:translateY(0)} }
+    .n1{animation-delay:.2s}.n2{animation-delay:.35s}.n3{animation-delay:.5s}
+    .spark { stroke-dasharray: 1300; stroke-dashoffset: 1300; animation: sdraw 2.4s cubic-bezier(.6,0,.2,1) .6s forwards; }
+    @keyframes sdraw { to { stroke-dashoffset: 0; } }
+    .fillfade { opacity: 0; animation: fade 1.2s ease 1.4s forwards; }
+    @keyframes fade { to { opacity: 1; } }
+    .reveal { stroke-dasharray: 730; stroke-dashoffset: 730; animation: revealline 1.3s cubic-bezier(.4,0,.2,1) .3s forwards; }
+    @keyframes revealline { to { stroke-dashoffset: 0; } }
+    @media (prefers-reduced-motion: reduce) {
+      .rise,.spark,.fillfade,.reveal { animation: none; }
+      .rise,.fillfade{opacity:1} .spark{stroke-dashoffset:0} .reveal{stroke-dashoffset:0}
+    }
   </style>
-  <rect class="panel rise a1" x="24" y="10" width="410" height="270"/>
-  <text class="mono rise a1" x="48" y="46" font-size="13" letter-spacing="2" fill="var(--bone)">REPOSITORY OVERVIEW</text>
-  <line x1="48" y1="60" x2="410" y2="60" stroke="var(--rule)" opacity=".5"/>
-  <text class="mono rise a1" x="48" y="100" font-size="14" fill="var(--muted)">Public repositories</text>
-  <text class="mono rise a1" x="410" y="100" font-size="14" fill="var(--bone)" text-anchor="end">6</text>
-  <text class="mono rise a1" x="48" y="140" font-size="14" fill="var(--muted)">Total contributions</text>
-  <text class="mono rise a1" x="410" y="140" font-size="14" fill="var(--bone)" text-anchor="end">308</text>
-  <text class="mono rise a1" x="48" y="180" font-size="14" fill="var(--muted)">Longest streak</text>
-  <text class="mono rise a1" x="410" y="180" font-size="14" fill="var(--bone)" text-anchor="end">9 days</text>
 
-  <rect class="panel rise a2" x="460" y="10" width="490" height="270"/>
-  <text class="mono rise a2" x="484" y="46" font-size="13" letter-spacing="2" fill="var(--bone)">LIVE DATA</text>
-  <line x1="484" y1="60" x2="926" y2="60" stroke="var(--rule)" opacity=".5"/>
-  <text class="mono rise a2" x="484" y="100" font-size="14" fill="var(--muted)">Language distribution, streaks, and commit</text>
-  <text class="mono rise a2" x="484" y="126" font-size="14" fill="var(--muted)">activity render live below via GitHub stats</text>
-  <text class="mono rise a2" x="484" y="152" font-size="14" fill="var(--muted)">widgets — always current, no manual updates.</text>
+  <rect width="1150" height="700" fill="#0d1117"/>
+
+  <text x="0" y="56" font-size="62" fill="#ffffff" font-weight="bold">03</text>
+  <text x="90" y="48" font-size="20" letter-spacing="3" fill="#e6e6ec">TELEMETRY</text>
+  <line class="reveal" x1="320" y1="40" x2="990" y2="40" stroke="#c9c9d1" stroke-width="1"/>
+  <text x="1150" y="48" font-size="13" fill="#6f6f78" text-anchor="end">~/03-telemetry</text>
+
+  <!-- left: repository overview -->
+  <rect x="0" y="90" width="360" height="270" fill="none" stroke="#3a3a45" stroke-width="1"/>
+  <text x="20" y="124" font-size="15" letter-spacing="1" fill="#e6e6ec">REPOSITORY OVERVIEW</text>
+  <line x1="20" y1="140" x2="340" y2="140" stroke="#20202a" stroke-width="1"/>
+  <text x="20" y="184" font-size="17" fill="#b7b7bf">Public repositories</text>
+  <text x="340" y="184" font-size="17" fill="#ffffff" text-anchor="end">18</text>
+  <text x="20" y="226" font-size="17" fill="#b7b7bf">Stars received</text>
+  <text x="340" y="226" font-size="17" fill="#ffffff" text-anchor="end">2</text>
+  <text x="20" y="268" font-size="17" fill="#b7b7bf">Primary language</text>
+  <text x="340" y="268" font-size="17" fill="#ffffff" text-anchor="end">Python</text>
+  <text x="20" y="310" font-size="17" fill="#b7b7bf">Focus area</text>
+  <text x="340" y="310" font-size="17" fill="#ffffff" text-anchor="end">ML / Security</text>
+
+  <!-- right: activity -->
+  <rect x="390" y="90" width="760" height="270" fill="none" stroke="#3a3a45" stroke-width="1"/>
+  <text x="410" y="124" font-size="15" letter-spacing="1" fill="#e6e6ec">ACTIVITY</text>
+  <line x1="410" y1="140" x2="1130" y2="140" stroke="#20202a" stroke-width="1"/>
+  <line x1="650" y1="170" x2="650" y2="330" stroke="#2a2a33" stroke-width="1"/>
+  <line x1="890" y1="170" x2="890" y2="330" stroke="#2a2a33" stroke-width="1"/>
+
+  <g class="rise n1">
+    <text x="410" y="240" font-size="44" fill="#ffffff">—</text>
+    <text x="410" y="268" font-size="12" fill="#b7b7bf" letter-spacing="1.5">TOTAL CONTRIBUTIONS</text>
+    <text x="410" y="286" font-size="10.5" fill="#6f6f78">fill in from your stats widget</text>
+  </g>
+  <g class="rise n2">
+    <text x="650" y="240" font-size="44" fill="#ffffff">—</text>
+    <text x="650" y="268" font-size="12" fill="#b7b7bf" letter-spacing="1.5">CURRENT STREAK</text>
+    <text x="650" y="286" font-size="10.5" fill="#6f6f78">fill in from your stats widget</text>
+  </g>
+  <g class="rise n3">
+    <text x="890" y="240" font-size="44" fill="#ffffff">—</text>
+    <text x="890" y="268" font-size="12" fill="#b7b7bf" letter-spacing="1.5">LONGEST STREAK</text>
+    <text x="890" y="286" font-size="10.5" fill="#6f6f78">fill in from your stats widget</text>
+  </g>
+
+  <!-- contribution chart placeholder -->
+  <rect x="0" y="390" width="1150" height="290" fill="none" stroke="#3a3a45" stroke-width="1"/>
+  <text x="20" y="424" font-size="15" letter-spacing="1" fill="#e6e6ec">CONTRIBUTION TELEMETRY</text>
+  <line x1="20" y1="440" x2="1130" y2="440" stroke="#20202a" stroke-width="1"/>
+  <text x="575" y="560" font-size="14" fill="#6f6f78" text-anchor="middle">chart populates once you paste your real daily contribution counts —</text>
+  <text x="575" y="584" font-size="14" fill="#6f6f78" text-anchor="middle">send them over and I'll draw the curve to match, same as before.</text>
 </svg>
