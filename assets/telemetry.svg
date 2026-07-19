@@ -15,7 +15,7 @@
     @keyframes rise { from{opacity:0;transform:translateY(10px)} to{opacity:1;transform:translateY(0)} }
     .n1{animation-delay:.2s}.n2{animation-delay:.35s}.n3{animation-delay:.5s}
     .m1{animation-delay:.5s}.m2{animation-delay:.7s}.m3{animation-delay:.9s}
-    .ping { animation: ping 2.2s ease-out infinite; transform-origin: 540px 484px; }
+    .ping { animation: ping 2.2s ease-out infinite; transform-origin: 671px 484px; }
     @keyframes ping { 0%{transform:scale(.4);opacity:.9} 80%,100%{transform:scale(2.8);opacity:0} }
     .reveal { stroke-dasharray: 720; stroke-dashoffset: 720; animation: revealline 1.3s cubic-bezier(.4,0,.2,1) .3s forwards; }
     @keyframes revealline { to { stroke-dashoffset: 0; } }
@@ -72,36 +72,36 @@
   <text fill="var(--dim)" class="mono" x="0" y="390" font-size="11" letter-spacing="2.5">TELEMETRY — WHAT THE HANDS ARE DOING</text>
   <text fill="var(--dim)" class="mono" x="1150" y="390" font-size="11" letter-spacing="2.5" text-anchor="end">FIG. 02</text>
   <line x1="0" y1="402" x2="1150" y2="402" stroke="var(--rule)"/>
-  <line x1="330" y1="426" x2="330" y2="632" stroke="var(--rule)" opacity=".4"/>
-  <line x1="620" y1="426" x2="620" y2="632" stroke="var(--rule)" opacity=".4"/>
+  <line x1="360" y1="426" x2="360" y2="632" stroke="var(--rule)" opacity=".4"/>
+  <line x1="760" y1="426" x2="760" y2="632" stroke="var(--rule)" opacity=".4"/>
 
   <text fill="var(--dim)" class="mono" x="0" y="440" font-size="10" letter-spacing="2.5">LANGUAGE DISTRIBUTION · EST. — VERIFY</text>
-  <g class="mono" font-size="11">
-    <text fill="var(--bone)" x="0" y="470">python</text>       <rect class="bar g1" x="0" y="478" width="230" height="6" fill="var(--accent)"/><text fill="var(--muted)" x="240" y="485" font-size="10">~40%</text>
-    <text fill="var(--bone)" x="0" y="508">c++</text>           <rect class="bar g2" x="0" y="516" width="150" height="6" fill="var(--bone)" opacity=".7"/><text fill="var(--muted)" x="160" y="523" font-size="10">~26%</text>
-    <text fill="var(--bone)" x="0" y="546">javascript/ts</text> <rect class="bar g3" x="0" y="554" width="110" height="6" fill="var(--bone)" opacity=".5"/><text fill="var(--muted)" x="120" y="561" font-size="10">~19%</text>
-    <text fill="var(--bone)" x="0" y="584">other</text>         <rect class="bar g4" x="0" y="592" width="85"  height="6" fill="var(--bone)" opacity=".3"/><text fill="var(--muted)" x="95" y="599" font-size="10">~15%</text>
+  <g class="mono" font-size="13">
+    <text fill="var(--bone)" x="0" y="474">python</text>       <rect class="bar g1" x="0" y="484" width="260" height="8" fill="var(--accent)"/><text fill="var(--muted)" x="272" y="492" font-size="11">~40%</text>
+    <text fill="var(--bone)" x="0" y="516">c++</text>           <rect class="bar g2" x="0" y="526" width="170" height="8" fill="var(--bone)" opacity=".7"/><text fill="var(--muted)" x="182" y="534" font-size="11">~26%</text>
+    <text fill="var(--bone)" x="0" y="558">javascript/ts</text> <rect class="bar g3" x="0" y="568" width="125" height="8" fill="var(--bone)" opacity=".5"/><text fill="var(--muted)" x="137" y="576" font-size="11">~19%</text>
+    <text fill="var(--bone)" x="0" y="600">other</text>         <rect class="bar g4" x="0" y="610" width="95"  height="8" fill="var(--bone)" opacity=".3"/><text fill="var(--muted)" x="107" y="618" font-size="11">~15%</text>
   </g>
 
-  <text fill="var(--dim)" class="mono" x="345" y="440" font-size="10" letter-spacing="2.5">SHIPPING VELOCITY · 2024 → 2026 (ILLUSTRATIVE)</text>
+  <text fill="var(--dim)" class="mono" x="560" y="440" font-size="10" letter-spacing="2.5" text-anchor="middle">SHIPPING VELOCITY · 2024 → 2026 (ILLUSTRATIVE)</text>
   <g>
-    <line x1="345" y1="600" x2="595" y2="600" stroke="var(--rule)"/>
-    <polyline class="spark" points="345,590 385,582 425,564 465,546 505,516 540,484 575,468" stroke="var(--accent)" stroke-width="1.5" fill="none"/>
-    <circle class="dot d1" cx="385" cy="582" r="2.5" fill="var(--bone)"/>
-    <circle class="dot d2" cx="425" cy="564" r="2.5" fill="var(--bone)"/>
-    <circle class="dot d3" cx="465" cy="546" r="2.5" fill="var(--bone)"/>
-    <circle class="dot d4" cx="505" cy="516" r="2.5" fill="var(--bone)"/>
-    <circle class="ping" cx="540" cy="484" r="4" stroke="var(--accent)" fill="none"/>
-    <circle class="dot d5" cx="540" cy="484" r="3" fill="var(--accent)"/>
-    <text fill="var(--dim)" class="mono" x="345" y="620" font-size="9.5" letter-spacing="1.5">'24</text>
-    <text fill="var(--dim)" class="mono" x="460" y="620" font-size="9.5" letter-spacing="1.5">'25</text>
-    <text fill="var(--dim)" class="mono" x="565" y="620" font-size="9.5" letter-spacing="1.5">'26</text>
+    <line x1="400" y1="600" x2="720" y2="600" stroke="var(--rule)"/>
+    <polyline class="spark" points="400,590 456,582 511,564 567,546 623,516 671,484 720,468" stroke="var(--accent)" stroke-width="1.5" fill="none"/>
+    <circle class="dot d1" cx="456" cy="582" r="2.5" fill="var(--bone)"/>
+    <circle class="dot d2" cx="511" cy="564" r="2.5" fill="var(--bone)"/>
+    <circle class="dot d3" cx="567" cy="546" r="2.5" fill="var(--bone)"/>
+    <circle class="dot d4" cx="623" cy="516" r="2.5" fill="var(--bone)"/>
+    <circle class="ping" cx="671" cy="484" r="4" stroke="var(--accent)" fill="none"/>
+    <circle class="dot d5" cx="671" cy="484" r="3" fill="var(--accent)"/>
+    <text fill="var(--dim)" class="mono" x="400" y="620" font-size="9.5" letter-spacing="1.5">'24</text>
+    <text fill="var(--dim)" class="mono" x="560" y="620" font-size="9.5" letter-spacing="1.5" text-anchor="middle">'25</text>
+    <text fill="var(--dim)" class="mono" x="720" y="620" font-size="9.5" letter-spacing="1.5" text-anchor="end">'26</text>
   </g>
 
   <g>
-    <g class="rise m1"><text fill="var(--bone)" class="mono" x="650" y="470" font-size="40">18</text><text fill="var(--muted)" class="mono" x="712" y="464" font-size="10" letter-spacing="2">REPOSITORIES</text></g>
-    <g class="rise m2"><text fill="var(--bone)" class="mono" x="650" y="524" font-size="40">5</text><text fill="var(--muted)" class="mono" x="712" y="518" font-size="10" letter-spacing="2">PROJECTS DOCUMENTED</text></g>
-    <g class="rise m3"><text fill="var(--bone)" class="mono" x="650" y="578" font-size="40">0</text><text fill="var(--muted)" class="mono" x="712" y="572" font-size="10" letter-spacing="2">STARS RECEIVED</text></g>
+    <g class="rise m1"><text fill="var(--bone)" class="mono" x="780" y="470" font-size="34">18</text><text fill="var(--muted)" class="mono" x="846" y="462" font-size="11" letter-spacing="2">REPOSITORIES</text></g>
+    <g class="rise m2"><text fill="var(--bone)" class="mono" x="780" y="534" font-size="34">5</text><text fill="var(--muted)" class="mono" x="846" y="526" font-size="11" letter-spacing="2">PROJECTS DOCUMENTED</text></g>
+    <g class="rise m3"><text fill="var(--bone)" class="mono" x="780" y="598" font-size="34">0</text><text fill="var(--muted)" class="mono" x="846" y="590" font-size="11" letter-spacing="2">STARS RECEIVED</text></g>
   </g>
 
   <!-- SECTION 3 (now last): contribution chart placeholder -->
