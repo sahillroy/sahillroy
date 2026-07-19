@@ -6,10 +6,10 @@
   </style>
 
   <rect width="1150" height="420" fill="#0d1117"/>
-  <text x="0" y="56" font-size="62" fill="#ffffff" font-weight="bold">05</text>
-  <text x="90" y="48" font-size="20" letter-spacing="3" fill="#e6e6ec">STACK</text>
+  <text x="0" y="46" font-size="44" fill="#ffffff" font-weight="bold">05</text>
+  <text x="68" y="40" font-size="20" letter-spacing="3" fill="#e6e6ec">STACK</text>
   <line class="reveal" x1="230" y1="40" x2="990" y2="40" stroke="#c9c9d1" stroke-width="1"/>
-  <text x="1150" y="48" font-size="13" fill="#6f6f78" text-anchor="end">~/05-stack</text>
+  <text x="1150" y="40" font-size="13" fill="#6f6f78" text-anchor="end">~/05-stack</text>
   <line x1="180" y1="78" x2="180" y2="320" stroke="#2a2a33" stroke-width="1"/>
   <text x="0" y="114" font-size="14" fill="#7c7c85">LANGUAGES</text>
   <text x="200" y="114" font-size="17" fill="#d6d6dc">C++ · Python · JavaScript/TypeScript</text>
