@@ -6,11 +6,11 @@
   </style>
 
   <rect width="1150" height="340" fill="#0d1117"/>
-  <text x="0" y="56" font-size="62" fill="#ffffff" font-weight="bold">01</text>
-  <text x="90" y="48" font-size="20" letter-spacing="3" fill="#e6e6ec">WHOAMI</text>
+  <text x="0" y="46" font-size="44" fill="#ffffff" font-weight="bold">01</text>
+  <text x="68" y="40" font-size="20" letter-spacing="3" fill="#e6e6ec">WHOAMI</text>
   <line class="reveal" x1="270" y1="40" x2="990" y2="40" stroke="#c9c9d1" stroke-width="1"/>
-  <text x="1150" y="48" font-size="13" fill="#6f6f78" text-anchor="end">~/01-whoami</text>
-  <text x="0" y="108" font-size="19" fill="#e6e6ec">Final year CS student at RCOEM, Nagpur — Dept. of AI &amp; Computer Science.</text>
+  <text x="1150" y="40" font-size="13" fill="#6f6f78" text-anchor="end">~/01-whoami</text>
+  <text x="0" y="108" font-size="19" fill="#e6e6ec">Third-year CS student at RCOEM, Nagpur — Dept. of AI &amp; Computer Science.</text>
   <text x="0" y="142" font-size="19" fill="#e6e6ec">building ML systems, full-stack apps &amp; secure infrastructure — Python · React · FastAPI.</text>
   <text x="0" y="176" font-size="19" fill="#e6e6ec">200+ LeetCode solved · drawn to shipping real systems over toy demos.</text>
   <line x1="0" y1="206" x2="1150" y2="206" stroke="#2a2a33" stroke-width="1"/>
