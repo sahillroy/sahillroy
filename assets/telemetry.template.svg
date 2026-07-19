@@ -1,0 +1,113 @@
+<svg width="1150" height="1000" viewBox="0 0 1150 1000" fill="none" xmlns="http://www.w3.org/2000/svg" font-family="Consolas, monospace" role="img" aria-label="Telemetry">
+  <style>
+    :root { --bone: #e6e6ec; --muted: #9a9aa3; --dim: #7c7c85; --rule: #3a3a45; --accent: #ffffff; }
+    .mono { font-family: ui-monospace, "SFMono-Regular", "SF Mono", Menlo, Consolas, "Liberation Mono", monospace; }
+    .bar { transform: scaleX(0); animation: grow 1.2s cubic-bezier(.2,.7,.2,1) forwards; }
+    @keyframes grow { to { transform: scaleX(1); } }
+    .g1{transform-origin:0px 0;animation-delay:.3s}.g2{transform-origin:0px 0;animation-delay:.45s}.g3{transform-origin:0px 0;animation-delay:.6s}
+    .g4{transform-origin:0px 0;animation-delay:.75s}
+    .spark { stroke-dasharray: 700; stroke-dashoffset: 700; animation: draw 2.2s cubic-bezier(.6,0,.2,1) .5s forwards; }
+    @keyframes draw { to { stroke-dashoffset: 0; } }
+    .dot { opacity: 0; animation: fade .4s ease forwards; }
+    .d1{animation-delay:1.0s}.d2{animation-delay:1.3s}.d3{animation-delay:1.6s}.d4{animation-delay:1.9s}.d5{animation-delay:2.2s}
+    @keyframes fade { to { opacity: 1; } }
+    .rise { opacity: 0; animation: rise .8s cubic-bezier(.2,.7,.2,1) forwards; }
+    @keyframes rise { from{opacity:0;transform:translateY(10px)} to{opacity:1;transform:translateY(0)} }
+    .n1{animation-delay:.2s}.n2{animation-delay:.35s}.n3{animation-delay:.5s}
+    .m1{animation-delay:.5s}.m2{animation-delay:.7s}.m3{animation-delay:.9s}
+    .ping { animation: ping 2.2s ease-out infinite; transform-origin: 540px 484px; }
+    @keyframes ping { 0%{transform:scale(.4);opacity:.9} 80%,100%{transform:scale(2.8);opacity:0} }
+    .reveal { stroke-dasharray: 720; stroke-dashoffset: 720; animation: revealline 1.3s cubic-bezier(.4,0,.2,1) .3s forwards; }
+    @keyframes revealline { to { stroke-dashoffset: 0; } }
+    @media (prefers-reduced-motion: reduce) {
+      .bar,.spark,.dot,.rise,.ping,.reveal { animation: none; }
+      .bar{transform:scaleX(1)} .spark{stroke-dashoffset:0} .dot,.rise{opacity:1} .ping{opacity:0} .reveal{stroke-dashoffset:0}
+    }
+  </style>
+
+  <rect width="1150" height="1000" fill="#0d1117"/>
+
+  <!-- header (once) -->
+  <text x="0" y="46" font-size="44" fill="#ffffff" font-weight="bold">03</text>
+  <text x="68" y="40" font-size="20" letter-spacing="3" fill="#e6e6ec">TELEMETRY</text>
+  <line class="reveal" x1="270" y1="40" x2="990" y2="40" stroke="#c9c9d1" stroke-width="1"/>
+  <text x="1150" y="40" font-size="13" fill="#6f6f78" text-anchor="end">~/03-telemetry</text>
+
+  <!-- SECTION 1: repository overview + activity -->
+  <rect x="0" y="90" width="360" height="270" fill="none" stroke="var(--rule)" stroke-width="1"/>
+  <text x="20" y="124" font-size="15" letter-spacing="1" fill="var(--bone)">REPOSITORY OVERVIEW</text>
+  <line x1="20" y1="140" x2="340" y2="140" stroke="#20202a" stroke-width="1"/>
+  <text x="20" y="184" font-size="17" fill="var(--muted)">Public repositories</text>
+  <text x="340" y="184" font-size="17" fill="#ffffff" text-anchor="end">{{REPO_COUNT}}</text>
+  <text x="20" y="226" font-size="17" fill="var(--muted)">Stars received</text>
+  <text x="340" y="226" font-size="17" fill="#ffffff" text-anchor="end">{{STARS}}</text>
+  <text x="20" y="268" font-size="17" fill="var(--muted)">Primary language</text>
+  <text x="340" y="268" font-size="17" fill="#ffffff" text-anchor="end">Python*</text>
+  <text x="20" y="310" font-size="17" fill="var(--muted)">Focus area</text>
+  <text x="340" y="310" font-size="17" fill="#ffffff" text-anchor="end">ML / Security</text>
+
+  <rect x="390" y="90" width="760" height="270" fill="none" stroke="var(--rule)" stroke-width="1"/>
+  <text x="410" y="124" font-size="15" letter-spacing="1" fill="var(--bone)">ACTIVITY</text>
+  <line x1="410" y1="140" x2="1130" y2="140" stroke="#20202a" stroke-width="1"/>
+  <line x1="650" y1="170" x2="650" y2="330" stroke="#2a2a33" stroke-width="1"/>
+  <line x1="890" y1="170" x2="890" y2="330" stroke="#2a2a33" stroke-width="1"/>
+
+  <g class="rise n1">
+    <text x="410" y="240" font-size="44" fill="#ffffff">{{TOTAL_CONTRIB}}</text>
+    <text x="410" y="268" font-size="12" fill="var(--muted)" letter-spacing="1.5">TOTAL CONTRIBUTIONS</text>
+    <text x="410" y="286" font-size="10.5" fill="var(--dim)">{{TOTAL_CONTRIB_RANGE}}</text>
+  </g>
+  <g class="rise n2">
+    <text x="650" y="240" font-size="44" fill="#ffffff">{{CURRENT_STREAK}}</text>
+    <text x="650" y="268" font-size="12" fill="var(--muted)" letter-spacing="1.5">CURRENT STREAK</text>
+    <text x="650" y="286" font-size="10.5" fill="var(--dim)">{{CURRENT_STREAK_RANGE}}</text>
+  </g>
+  <g class="rise n3">
+    <text x="890" y="240" font-size="44" fill="#ffffff">{{LONGEST_STREAK}}</text>
+    <text x="890" y="268" font-size="12" fill="var(--muted)" letter-spacing="1.5">LONGEST STREAK</text>
+    <text x="890" y="286" font-size="10.5" fill="var(--dim)">{{LONGEST_STREAK_RANGE}}</text>
+  </g>
+
+  <!-- SECTION 2 (now second): language distribution + shipping velocity + counters -->
+  <text fill="var(--dim)" class="mono" x="0" y="390" font-size="11" letter-spacing="2.5">TELEMETRY — WHAT THE HANDS ARE DOING</text>
+  <text fill="var(--dim)" class="mono" x="1150" y="390" font-size="11" letter-spacing="2.5" text-anchor="end">FIG. 02</text>
+  <line x1="0" y1="402" x2="1150" y2="402" stroke="var(--rule)"/>
+  <line x1="330" y1="426" x2="330" y2="632" stroke="var(--rule)" opacity=".4"/>
+  <line x1="620" y1="426" x2="620" y2="632" stroke="var(--rule)" opacity=".4"/>
+
+  <text fill="var(--dim)" class="mono" x="0" y="440" font-size="10" letter-spacing="2.5">LANGUAGE DISTRIBUTION · EST. — VERIFY</text>
+  <g class="mono" font-size="11">
+    <text fill="var(--bone)" x="0" y="470">python</text>       <rect class="bar g1" x="0" y="478" width="230" height="6" fill="var(--accent)"/><text fill="var(--muted)" x="240" y="485" font-size="10">~40%</text>
+    <text fill="var(--bone)" x="0" y="508">c++</text>           <rect class="bar g2" x="0" y="516" width="150" height="6" fill="var(--bone)" opacity=".7"/><text fill="var(--muted)" x="160" y="523" font-size="10">~26%</text>
+    <text fill="var(--bone)" x="0" y="546">javascript/ts</text> <rect class="bar g3" x="0" y="554" width="110" height="6" fill="var(--bone)" opacity=".5"/><text fill="var(--muted)" x="120" y="561" font-size="10">~19%</text>
+    <text fill="var(--bone)" x="0" y="584">other</text>         <rect class="bar g4" x="0" y="592" width="85"  height="6" fill="var(--bone)" opacity=".3"/><text fill="var(--muted)" x="95" y="599" font-size="10">~15%</text>
+  </g>
+
+  <text fill="var(--dim)" class="mono" x="345" y="440" font-size="10" letter-spacing="2.5">SHIPPING VELOCITY · 2024 → 2026 (ILLUSTRATIVE)</text>
+  <g>
+    <line x1="345" y1="600" x2="595" y2="600" stroke="var(--rule)"/>
+    <polyline class="spark" points="345,590 385,582 425,564 465,546 505,516 540,484 575,468" stroke="var(--accent)" stroke-width="1.5" fill="none"/>
+    <circle class="dot d1" cx="385" cy="582" r="2.5" fill="var(--bone)"/>
+    <circle class="dot d2" cx="425" cy="564" r="2.5" fill="var(--bone)"/>
+    <circle class="dot d3" cx="465" cy="546" r="2.5" fill="var(--bone)"/>
+    <circle class="dot d4" cx="505" cy="516" r="2.5" fill="var(--bone)"/>
+    <circle class="ping" cx="540" cy="484" r="4" stroke="var(--accent)" fill="none"/>
+    <circle class="dot d5" cx="540" cy="484" r="3" fill="var(--accent)"/>
+    <text fill="var(--dim)" class="mono" x="345" y="620" font-size="9.5" letter-spacing="1.5">'24</text>
+    <text fill="var(--dim)" class="mono" x="460" y="620" font-size="9.5" letter-spacing="1.5">'25</text>
+    <text fill="var(--dim)" class="mono" x="565" y="620" font-size="9.5" letter-spacing="1.5">'26</text>
+  </g>
+
+  <g>
+    <g class="rise m1"><text fill="var(--bone)" class="mono" x="650" y="470" font-size="40">{{REPO_COUNT}}</text><text fill="var(--muted)" class="mono" x="712" y="464" font-size="10" letter-spacing="2">REPOSITORIES</text></g>
+    <g class="rise m2"><text fill="var(--bone)" class="mono" x="650" y="524" font-size="40">5</text><text fill="var(--muted)" class="mono" x="712" y="518" font-size="10" letter-spacing="2">PROJECTS DOCUMENTED</text></g>
+    <g class="rise m3"><text fill="var(--bone)" class="mono" x="650" y="578" font-size="40">{{STARS}}</text><text fill="var(--muted)" class="mono" x="712" y="572" font-size="10" letter-spacing="2">STARS RECEIVED</text></g>
+  </g>
+
+  <!-- SECTION 3 (now last): contribution chart placeholder -->
+  <rect x="0" y="650" width="1150" height="290" fill="none" stroke="var(--rule)" stroke-width="1"/>
+  <text x="20" y="684" font-size="15" letter-spacing="1" fill="var(--bone)">CONTRIBUTION TELEMETRY</text>
+  <line x1="20" y1="700" x2="1130" y2="700" stroke="#20202a" stroke-width="1"/>
+  <text x="575" y="820" font-size="14" fill="var(--dim)" text-anchor="middle">chart populates once you paste your real daily contribution counts —</text>
+  <text x="575" y="844" font-size="14" fill="var(--dim)" text-anchor="middle">send them over and I'll draw the curve to match, same as before.</text>
+</svg>
