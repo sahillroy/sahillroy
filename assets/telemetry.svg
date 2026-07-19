@@ -1,0 +1,36 @@
+<svg width="1150" height="390" viewBox="0 0 1150 390" xmlns="http://www.w3.org/2000/svg" font-family="Consolas, monospace">
+  <rect width="1150" height="390" fill="#0d1117"/>
+
+  <text x="0" y="56" font-size="62" fill="#ffffff" font-weight="bold">03</text>
+  <text x="90" y="48" font-size="20" letter-spacing="3" fill="#e6e6ec">TELEMETRY</text>
+  <line x1="320" y1="40" x2="990" y2="40" stroke="#3a3a45" stroke-width="1" stroke-dasharray="6 4">
+    <animate attributeName="stroke-dashoffset" values="0;-20" dur="1s" repeatCount="indefinite"/>
+  </line>
+  <text x="1150" y="48" font-size="13" fill="#6f6f78" text-anchor="end">~/03-telemetry</text>
+
+  <text x="0" y="80" font-size="14" letter-spacing="1" fill="#8b8b93">TELEMETRY — WHAT THE HANDS ARE DOING</text>
+  <text x="1150" y="80" font-size="13" fill="#6f6f78" text-anchor="end">FIG. 02</text>
+
+  <rect x="0" y="102" width="360" height="270" fill="none" stroke="#2a2a33" stroke-width="1"/>
+  <text x="20" y="136" font-size="15" letter-spacing="1" fill="#e6e6ec">REPOSITORY OVERVIEW</text>
+  <line x1="20" y1="152" x2="340" y2="152" stroke="#20202a" stroke-width="1"/>
+
+  <text x="20" y="196" font-size="17" fill="#b7b7bf">Public repositories</text>
+  <text x="340" y="196" font-size="17" fill="#ffffff" text-anchor="end">6</text>
+
+  <text x="20" y="238" font-size="17" fill="#b7b7bf">Primary language</text>
+  <text x="340" y="238" font-size="17" fill="#ffffff" text-anchor="end">Python</text>
+
+  <text x="20" y="280" font-size="17" fill="#b7b7bf">Focus area</text>
+  <text x="340" y="280" font-size="17" fill="#ffffff" text-anchor="end">SWE / ML</text>
+
+  <text x="20" y="322" font-size="17" fill="#b7b7bf">Status</text>
+  <text x="340" y="322" font-size="17" fill="#ffffff" text-anchor="end">Building</text>
+
+  <rect x="390" y="102" width="760" height="270" fill="none" stroke="#2a2a33" stroke-width="1"/>
+  <text x="410" y="136" font-size="15" letter-spacing="1" fill="#e6e6ec">LIVE DATA</text>
+  <line x1="410" y1="152" x2="1130" y2="152" stroke="#20202a" stroke-width="1"/>
+  <text x="410" y="196" font-size="17" fill="#b7b7bf">Language distribution, streaks, and commit activity are</text>
+  <text x="410" y="224" font-size="17" fill="#b7b7bf">rendered live below via GitHub stats widgets — always</text>
+  <text x="410" y="252" font-size="17" fill="#b7b7bf">current, no manual updates needed.</text>
+</svg>
