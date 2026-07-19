@@ -18,17 +18,6 @@
 <img src="assets/s03.svg" alt="03 — telemetry"/>
 <img src="assets/telemetry.svg" alt="Telemetry"/>
 
-<div align="center">
-<table>
-<tr>
-<td><img src="https://github-readme-stats.vercel.app/api?username=sahillroy&show_icons=true&theme=default&hide_border=true" alt="GitHub Stats"/></td>
-<td><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sahillroy&layout=compact&theme=default&hide_border=true" alt="Top Languages"/></td>
-</tr>
-<tr>
-<td colspan="2"><img src="https://github-readme-streak-stats.herokuapp.com/?user=sahillroy&theme=default&hide_border=true" alt="Streak Stats"/></td>
-</tr>
-</table>
-</div>
 
 <img src="assets/s04.svg" alt="04 — the route"/>
 <img src="assets/timeline.svg" alt="Timeline"/>
