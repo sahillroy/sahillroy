@@ -79,7 +79,12 @@ def get_all_contribution_days():
     seen = {}
     for date_str, count in all_days:
         seen[date_str] = count
-    return sorted(seen.items())
+    today = datetime.date.today()
+    # GitHub returns the full calendar year including future dates padded
+    # with 0 contributions — drop anything after today so "last 30 days"
+    # actually means the last 30 real days, not future placeholders.
+    filtered = {d: c for d, c in seen.items() if datetime.date.fromisoformat(d) <= today}
+    return sorted(filtered.items())
 
 
 def compute_streaks(days):
