@@ -53,7 +53,7 @@
   <line x1="890" y1="170" x2="890" y2="330" stroke="#2a2a33" stroke-width="1"/>
 
   <g class="rise n1">
-    <text x="410" y="240" font-size="44" fill="#ffffff">371</text>
+    <text x="410" y="240" font-size="44" fill="#ffffff">372</text>
     <text x="410" y="268" font-size="12" fill="var(--muted)" letter-spacing="1.5">TOTAL CONTRIBUTIONS</text>
     <text x="410" y="286" font-size="10.5" fill="var(--dim)">Feb 7, 2024 – present</text>
   </g>
@@ -112,23 +112,23 @@
     <line x1="60" y1="900.0" x2="1090" y2="900.0" stroke="var(--rule)" stroke-width="1" stroke-dasharray="3 3" opacity=".35"/>
     <text fill="var(--dim)" x="45" y="904.0" font-size="10" text-anchor="end">0</text>
     <line x1="60" y1="820.0" x2="1090" y2="820.0" stroke="var(--rule)" stroke-width="1" stroke-dasharray="3 3" opacity=".35"/>
-    <text fill="var(--dim)" x="45" y="824.0" font-size="10" text-anchor="end">0</text>
+    <text fill="var(--dim)" x="45" y="824.0" font-size="10" text-anchor="end">36</text>
     <line x1="60" y1="740.0" x2="1090" y2="740.0" stroke="var(--rule)" stroke-width="1" stroke-dasharray="3 3" opacity=".35"/>
-    <text fill="var(--dim)" x="45" y="744.0" font-size="10" text-anchor="end">1</text>
+    <text fill="var(--dim)" x="45" y="744.0" font-size="10" text-anchor="end">71</text>
     <line x1="60" y1="900" x2="1090" y2="900" stroke="var(--rule)" stroke-width="1"/>
-    <polyline points="60.0,900.0 95.5,900.0 131.0,900.0 166.6,900.0 202.1,900.0 237.6,900.0 273.1,900.0 308.6,900.0 344.1,900.0 379.7,900.0 415.2,900.0 450.7,900.0 486.2,900.0 521.7,900.0 557.2,900.0 592.8,900.0 628.3,900.0 663.8,900.0 699.3,900.0 734.8,900.0 770.3,900.0 805.9,900.0 841.4,900.0 876.9,900.0 912.4,900.0 947.9,900.0 983.4,900.0 1019.0,900.0 1054.5,900.0 1090.0,900.0" stroke="var(--accent)" stroke-width="1.5" fill="none"/>
-    <circle cx="1090.0" cy="900.0" r="3" fill="var(--accent)"/>
-    <text fill="var(--dim)" x="60.0" y="920" font-size="9" text-anchor="middle">2</text>
-    <text fill="var(--dim)" x="166.6" y="920" font-size="9" text-anchor="middle">5</text>
-    <text fill="var(--dim)" x="273.1" y="920" font-size="9" text-anchor="middle">8</text>
-    <text fill="var(--dim)" x="379.7" y="920" font-size="9" text-anchor="middle">11</text>
-    <text fill="var(--dim)" x="486.2" y="920" font-size="9" text-anchor="middle">14</text>
-    <text fill="var(--dim)" x="592.8" y="920" font-size="9" text-anchor="middle">17</text>
-    <text fill="var(--dim)" x="699.3" y="920" font-size="9" text-anchor="middle">20</text>
-    <text fill="var(--dim)" x="805.9" y="920" font-size="9" text-anchor="middle">23</text>
-    <text fill="var(--dim)" x="912.4" y="920" font-size="9" text-anchor="middle">26</text>
-    <text fill="var(--dim)" x="1019.0" y="920" font-size="9" text-anchor="middle">29</text>
-    <text fill="var(--dim)" x="1090.0" y="920" font-size="9" text-anchor="middle">31</text>
+    <polyline points="60.0,897.7 95.5,900.0 131.0,879.7 166.6,900.0 202.1,900.0 237.6,866.2 273.1,900.0 308.6,900.0 344.1,900.0 379.7,900.0 415.2,900.0 450.7,900.0 486.2,897.7 521.7,900.0 557.2,900.0 592.8,897.7 628.3,900.0 663.8,900.0 699.3,900.0 734.8,897.7 770.3,895.5 805.9,897.7 841.4,900.0 876.9,900.0 912.4,900.0 947.9,900.0 983.4,893.2 1019.0,900.0 1054.5,900.0 1090.0,740.0" stroke="var(--accent)" stroke-width="1.5" fill="none"/>
+    <circle cx="1090.0" cy="740.0" r="3" fill="var(--accent)"/>
+    <text fill="var(--dim)" x="60.0" y="920" font-size="9" text-anchor="middle">20</text>
+    <text fill="var(--dim)" x="166.6" y="920" font-size="9" text-anchor="middle">23</text>
+    <text fill="var(--dim)" x="273.1" y="920" font-size="9" text-anchor="middle">26</text>
+    <text fill="var(--dim)" x="379.7" y="920" font-size="9" text-anchor="middle">29</text>
+    <text fill="var(--dim)" x="486.2" y="920" font-size="9" text-anchor="middle">2</text>
+    <text fill="var(--dim)" x="592.8" y="920" font-size="9" text-anchor="middle">5</text>
+    <text fill="var(--dim)" x="699.3" y="920" font-size="9" text-anchor="middle">8</text>
+    <text fill="var(--dim)" x="805.9" y="920" font-size="9" text-anchor="middle">11</text>
+    <text fill="var(--dim)" x="912.4" y="920" font-size="9" text-anchor="middle">14</text>
+    <text fill="var(--dim)" x="1019.0" y="920" font-size="9" text-anchor="middle">17</text>
+    <text fill="var(--dim)" x="1090.0" y="920" font-size="9" text-anchor="middle">19</text>
     <text fill="var(--dim)" x="60" y="944" font-size="11" letter-spacing="1.5">last 30 days</text>
   </g>
 </svg>
