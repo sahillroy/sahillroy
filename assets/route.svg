@@ -1,37 +1,118 @@
-<svg width="1150" height="320" viewBox="0 0 1150 320" xmlns="http://www.w3.org/2000/svg" font-family="Consolas, monospace">
+<svg width="1150" height="720" viewBox="0 0 1150 720" xmlns="http://www.w3.org/2000/svg" font-family="Consolas, monospace">
   <style>
-    .reveal { stroke-dasharray: 700; stroke-dashoffset: 700; animation: revealline 1.3s cubic-bezier(.4,0,.2,1) .3s forwards; }
+    :root { --bone: #e6e6ec; --muted: #9a9aa3; --dim: #7c7c85; --rule: #3a3a45; --accent: #c9c9d1; }
+    .reveal { stroke-dasharray: 1150; stroke-dashoffset: 1150; animation: revealline 1.3s cubic-bezier(.4,0,.2,1) .3s forwards; }
     @keyframes revealline { to { stroke-dashoffset: 0; } }
-    @media (prefers-reduced-motion: reduce) { .reveal { animation: none; stroke-dashoffset: 0; } }
+    .axis { stroke: var(--rule); stroke-width: 1; stroke-dasharray: 1080; stroke-dashoffset: 1080; animation: draw 2.2s cubic-bezier(.6,0,.2,1) forwards; }
+    @keyframes draw { to { stroke-dashoffset: 0; } }
+    .m { opacity: 0; animation: rise .7s cubic-bezier(.2,.7,.2,1) forwards; }
+    @keyframes rise { from{opacity:0;transform:translateY(8px)} to{opacity:1;transform:translateY(0)} }
+    .m1{animation-delay:.4s}.m2{animation-delay:.8s}.m3{animation-delay:1.2s}.m4{animation-delay:1.5s}.m5{animation-delay:1.8s}.m6{animation-delay:2.1s}.m7{animation-delay:2.4s}
+    .pulse { animation: pulse 2.6s ease-in-out infinite; }
+    @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.35} }
+    .ring { animation: ring 2.6s ease-out infinite; transform-origin: 1030px 130px; }
+    @keyframes ring { 0%{transform:scale(.4);opacity:.8} 80%,100%{transform:scale(3);opacity:0} }
+    .rise2 { opacity: 0; animation: rise2 .7s cubic-bezier(.2,.7,.2,1) forwards; }
+    @keyframes rise2 { from{opacity:0;transform:translateY(8px)} to{opacity:1;transform:translateY(0)} }
+    .e1{animation-delay:.2s}.e2{animation-delay:.4s}.e3{animation-delay:.6s}.e4{animation-delay:.8s}.e5{animation-delay:1.0s}
+    @media (prefers-reduced-motion: reduce) {
+      .reveal,.axis,.m,.pulse,.ring,.rise2 { animation: none; }
+      .reveal{stroke-dashoffset:0} .axis{stroke-dashoffset:0} .m{opacity:1} .ring{opacity:0} .rise2{opacity:1}
+    }
   </style>
 
-  <rect width="1150" height="320" fill="#0d1117"/>
-  <text x="0" y="56" font-size="62" fill="#ffffff" font-weight="bold">04</text>
-  <text x="90" y="48" font-size="20" letter-spacing="3" fill="#e6e6ec">THE ROUTE</text>
-  <line class="reveal" x1="290" y1="40" x2="990" y2="40" stroke="#c9c9d1" stroke-width="1"/>
-  <text x="1150" y="48" font-size="13" fill="#6f6f78" text-anchor="end">~/04-journey</text>
-  <line x1="0" y1="118" x2="1150" y2="118" stroke="#3a3a45" stroke-width="1" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1">
-    <animate attributeName="stroke-dashoffset" from="1" to="0" dur="1.2s" begin="0.2s" fill="freeze"/>
-  </line>
+  <rect width="1150" height="720" fill="#0d1117"/>
 
-  <circle cx="60" cy="118" r="5" fill="#ffffff"/>
-  <text x="60" y="96" font-size="14" fill="#e6e6ec" text-anchor="middle">2023</text>
-  <text x="60" y="142" font-size="13" fill="#8b8b93" text-anchor="middle">degree started</text>
-  <circle cx="420" cy="118" r="5" fill="#ffffff"/>
-  <text x="420" y="96" font-size="14" fill="#e6e6ec" text-anchor="middle">2024</text>
-  <text x="420" y="142" font-size="13" fill="#8b8b93" text-anchor="middle">started coding</text>
-  <circle cx="780" cy="118" r="5" fill="#ffffff"/>
-  <text x="780" y="96" font-size="14" fill="#e6e6ec" text-anchor="middle">2025</text>
-  <text x="780" y="142" font-size="13" fill="#8b8b93" text-anchor="middle">Sentinel Core &amp; PMIS build sprint</text>
-  <circle cx="1090" cy="118" r="5" fill="#3ddc84"/>
-  <text x="1090" y="96" font-size="14" fill="#3ddc84" text-anchor="middle">now</text>
-  <text x="1090" y="142" font-size="13" fill="#8b8b93" text-anchor="middle">building doc-qa-rag</text>
+  <!-- header -->
+  <text x="0" y="46" font-size="44" fill="#ffffff" font-weight="bold">04</text>
+  <text x="68" y="40" font-size="20" letter-spacing="3" fill="#e6e6ec">THE ROUTE</text>
+  <line class="reveal" x1="230" y1="40" x2="990" y2="40" stroke="var(--accent)" stroke-width="1"/>
+  <text x="1150" y="40" font-size="13" fill="var(--dim)" text-anchor="end">~/04-journey</text>
 
-  <line x1="0" y1="182" x2="1150" y2="182" stroke="#2a2a33" stroke-width="1"/>
-  <text x="0" y="220" font-size="14" fill="#7c7c85">2023 —</text>
-  <text x="140" y="220" font-size="17" fill="#d6d6dc">B.Tech (IT/CSE), RCOEM — Dept. of AI &amp; Computer Science, Nagpur</text>
-  <text x="0" y="256" font-size="14" fill="#7c7c85">2025 —</text>
-  <text x="140" y="256" font-size="17" fill="#d6d6dc">Shipped Sentinel Core &amp; PMIS — FastAPI, React, LLM enrichment</text>
-  <text x="0" y="292" font-size="14" fill="#7c7c85">2026 —</text>
-  <text x="140" y="292" font-size="17" fill="#d6d6dc">Bitcoin-sentiment analysis, 200+ LeetCode solved, building doc-qa-rag</text>
+  <text fill="var(--muted)" x="0" y="88" font-size="11" letter-spacing="3.5">THE ROUTE SO FAR</text>
+  <text fill="var(--muted)" x="1150" y="88" font-size="11" letter-spacing="3.5" text-anchor="end">FIG. 03</text>
+  <line x1="0" y1="100" x2="1150" y2="100" stroke="var(--rule)"/>
+
+  <!-- zigzag milestone axis -->
+  <line class="axis" x1="0" y1="185" x2="1110" y2="185"/>
+
+  <g class="m m1">
+    <circle cx="40" cy="185" r="4" fill="var(--bone)"/>
+    <line x1="40" y1="181" x2="40" y2="156" stroke="var(--rule)"/>
+    <text fill="var(--accent)" x="40" y="134" font-size="11" letter-spacing="2" text-anchor="middle">2023</text>
+    <text fill="var(--bone)" x="40" y="150" font-size="10.5" letter-spacing="1" text-anchor="middle">degree started</text>
+  </g>
+
+  <g class="m m2">
+    <circle cx="210" cy="185" r="4" fill="var(--bone)"/>
+    <line x1="210" y1="189" x2="210" y2="214" stroke="var(--rule)"/>
+    <text fill="var(--accent)" x="210" y="232" font-size="11" letter-spacing="2" text-anchor="middle">2024</text>
+    <text fill="var(--bone)" x="210" y="248" font-size="10.5" letter-spacing="1" text-anchor="middle">started coding</text>
+  </g>
+
+  <g class="m m3">
+    <circle cx="390" cy="185" r="4" fill="var(--bone)"/>
+    <line x1="390" y1="181" x2="390" y2="156" stroke="var(--rule)"/>
+    <text fill="var(--accent)" x="390" y="134" font-size="11" letter-spacing="2" text-anchor="middle">Aug '25</text>
+    <text fill="var(--bone)" x="390" y="150" font-size="10.5" letter-spacing="1" text-anchor="middle">Sentinel Core &amp; PMIS sprint</text>
+  </g>
+
+  <g class="m m4">
+    <circle cx="560" cy="185" r="4" fill="var(--bone)"/>
+    <line x1="560" y1="189" x2="560" y2="214" stroke="var(--rule)"/>
+    <text fill="var(--accent)" x="560" y="232" font-size="11" letter-spacing="2" text-anchor="middle">Jan '26</text>
+    <text fill="var(--bone)" x="560" y="248" font-size="10.5" letter-spacing="1" text-anchor="middle">secure-log-analyzer</text>
+  </g>
+
+  <g class="m m5">
+    <circle cx="730" cy="185" r="4" fill="var(--bone)"/>
+    <line x1="730" y1="181" x2="730" y2="156" stroke="var(--rule)"/>
+    <text fill="var(--accent)" x="730" y="134" font-size="11" letter-spacing="2" text-anchor="middle">Feb–Mar '26</text>
+    <text fill="var(--bone)" x="730" y="150" font-size="10.5" letter-spacing="1" text-anchor="middle">rock-paper-scissors · voice-billing</text>
+  </g>
+
+  <g class="m m6">
+    <circle class="ring" cx="1030" cy="185" r="4" stroke="var(--accent)" fill="none"/>
+    <circle class="pulse" cx="1030" cy="185" r="4.5" fill="var(--accent)"/>
+    <line x1="1030" y1="189" x2="1030" y2="214" stroke="var(--rule)"/>
+    <text fill="var(--accent)" x="1030" y="232" font-size="11" letter-spacing="2" text-anchor="middle">NOW</text>
+    <text fill="var(--bone)" x="1030" y="248" font-size="10.5" letter-spacing="1" text-anchor="middle">3rd yr CS · building doc-qa-rag</text>
+  </g>
+
+  <g class="m m7">
+    <circle cx="1110" cy="185" r="3" fill="var(--dim)"/>
+    <text fill="var(--dim)" x="1110" y="165" font-size="10" letter-spacing="2" text-anchor="end">2028 →</text>
+    <text fill="var(--dim)" x="1110" y="210" font-size="13" text-anchor="end">the interesting part</text>
+  </g>
+
+  <!-- detailed build log -->
+  <line x1="0" y1="290" x2="1150" y2="290" stroke="var(--rule)" opacity=".5"/>
+  <line x1="150" y1="316" x2="150" y2="700" stroke="var(--rule)" stroke-width="1" opacity=".4"/>
+
+  <g class="rise2 e1">
+    <text x="0" y="342" font-size="12" fill="var(--accent)" letter-spacing="2">2026</text>
+    <text x="168" y="342" font-size="15" fill="var(--bone)">doc-qa-rag · RAG document Q&amp;A system <tspan fill="#3ddc84">(in progress)</tspan></text>
+    <text x="168" y="368" font-size="14" fill="var(--muted)">built manually in raw Python — ChromaDB, chunking, retrieval — before</text>
+    <text x="168" y="390" font-size="14" fill="var(--muted)">layering in LangChain abstractions</text>
+  </g>
+
+  <g class="rise2 e2">
+    <text x="0" y="438" font-size="12" fill="var(--accent)" letter-spacing="2">2026</text>
+    <text x="168" y="438" font-size="15" fill="var(--bone)">secure-log-analyzer · rock-paper-scissors · voice-billing</text>
+    <text x="168" y="464" font-size="14" fill="var(--muted)">Python security tooling, real-time OpenCV gesture recognition,</text>
+    <text x="168" y="486" font-size="14" fill="var(--muted)">speech-driven billing pipeline · 200+ LeetCode problems solved</text>
+  </g>
+
+  <g class="rise2 e3">
+    <text x="0" y="534" font-size="12" fill="var(--accent)" letter-spacing="2">2025</text>
+    <text x="168" y="534" font-size="15" fill="var(--bone)">Sentinel Core &amp; PMIS build sprint</text>
+    <text x="168" y="560" font-size="14" fill="var(--muted)">AI SOC analyst dashboard (FastAPI, React, LLM enrichment) and a</text>
+    <text x="168" y="582" font-size="14" fill="var(--muted)">project-allocation engine (FastAPI, Next.js, Groq, Aadhaar KYC)</text>
+  </g>
+
+  <g class="rise2 e4">
+    <text x="0" y="630" font-size="12" fill="var(--accent)" letter-spacing="2">2023 –</text>
+    <text x="168" y="630" font-size="15" fill="var(--bone)">RCOEM, Nagpur · B.Tech IT/CSE — Dept. of AI &amp; Computer Science</text>
+    <text x="168" y="656" font-size="14" fill="var(--muted)">Currently Semester VI · third-year</text>
+  </g>
 </svg>
