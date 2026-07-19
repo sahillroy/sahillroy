@@ -1,48 +1,41 @@
-<svg viewBox="0 0 1000 590" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Five projects by Sahil Roy">
+<svg width="1150" height="810" viewBox="0 0 1150 810" xmlns="http://www.w3.org/2000/svg" font-family="Consolas, monospace">
   <style>
-    :root { --ink:#000000; --paper:#FFFFFF; }
-    @media (prefers-color-scheme:dark) { :root { --ink:#FFFFFF; --paper:#000000; } }
-    .mono { font-family:ui-monospace,"SFMono-Regular","SF Mono",Menlo,Consolas,"Liberation Mono",monospace; }
-    .row { opacity:0; animation:reveal .55s cubic-bezier(.2,.7,.2,1) forwards; }
-    .rule { stroke:var(--ink); stroke-width:1; }
-    .title { fill:var(--ink); font-size:17px; font-weight:700; letter-spacing:.8px; }
-    .copy { fill:var(--ink); font-size:12px; }
-    .meta { fill:var(--ink); font-size:11px; letter-spacing:.4px; }
-    @keyframes reveal { from { opacity:0; } to { opacity:1; } }
-    .r1{animation-delay:.05s}.r2{animation-delay:.10s}.r3{animation-delay:.15s}.r4{animation-delay:.20s}.r5{animation-delay:.25s}
-    @media (prefers-reduced-motion:reduce) { .row { animation:none; opacity:1; } }
+    .reveal { stroke-dasharray: 730; stroke-dashoffset: 730; animation: revealline 1.3s cubic-bezier(.4,0,.2,1) .3s forwards; }
+    @keyframes revealline { to { stroke-dashoffset: 0; } }
+    @media (prefers-reduced-motion: reduce) { .reveal { animation: none; stroke-dashoffset: 0; } }
   </style>
-  <g class="mono">
-    <g class="row r1" transform="translate(0 20)">
-      <text class="title" x="48" y="24">01 / MODIJI</text>
-      <text class="copy" x="48" y="49">An ML model recommending PM internship scheme opportunities to candidates.</text>
-      <text class="copy" x="48" y="68">Ranks recommendations based on candidate skill profile and area of interest.</text>
-      <text class="meta" x="48" y="87">PYTHON · MACHINE LEARNING · RECOMMENDATION SYSTEM</text>
-      <line class="rule" x1="48" y1="104" x2="952" y2="104"/>
-    </g>
-    <g class="row r2" transform="translate(0 130)">
-      <text class="title" x="48" y="24">02 / BITCOIN-TRADER-SENTIMENT-ANALYSIS</text>
-      <text class="copy" x="48" y="49">[Add a one-line description]</text>
-      <text class="meta" x="48" y="87">JUPYTER NOTEBOOK · SENTIMENT ANALYSIS</text>
-      <line class="rule" x1="48" y1="104" x2="952" y2="104"/>
-    </g>
-    <g class="row r3" transform="translate(0 240)">
-      <text class="title" x="48" y="24">03 / PROOFSTACK</text>
-      <text class="copy" x="48" y="49">[Add a one-line description]</text>
-      <text class="meta" x="48" y="87">TYPESCRIPT</text>
-      <line class="rule" x1="48" y1="104" x2="952" y2="104"/>
-    </g>
-    <g class="row r4" transform="translate(0 350)">
-      <text class="title" x="48" y="24">04 / AI-SOC-ANALYST-ASSISTANT</text>
-      <text class="copy" x="48" y="49">An AI-assisted tool supporting SOC (Security Operations Center) analyst workflows.</text>
-      <text class="meta" x="48" y="87">JAVASCRIPT · SECURITY</text>
-      <line class="rule" x1="48" y1="104" x2="952" y2="104"/>
-    </g>
-    <g class="row r5" transform="translate(0 460)">
-      <text class="title" x="48" y="24">05 / CP</text>
-      <text class="copy" x="48" y="49">Competitive programming solutions and practice.</text>
-      <text class="meta" x="48" y="87">C++</text>
-      <line class="rule" x1="48" y1="104" x2="952" y2="104"/>
-    </g>
-  </g>
+
+  <rect width="1150" height="810" fill="#0d1117"/>
+  <text x="0" y="56" font-size="62" fill="#ffffff" font-weight="bold">02</text>
+  <text x="90" y="48" font-size="20" letter-spacing="3" fill="#e6e6ec">PROJECTS</text>
+  <line class="reveal" x1="260" y1="40" x2="990" y2="40" stroke="#c9c9d1" stroke-width="1"/>
+  <text x="1150" y="48" font-size="13" fill="#6f6f78" text-anchor="end">~/02-projects</text>
+
+  <text x="0" y="122" font-size="21" fill="#ffffff" font-weight="bold">01 / SENTINEL CORE</text>
+  <text x="0" y="153" font-size="17" fill="#b7b7bf">AI-powered SOC analyst dashboard — anomaly detection, rule-based</text>
+  <text x="0" y="178" font-size="17" fill="#b7b7bf">detection, and LLM-based alert enrichment.</text>
+  <text x="0" y="206" font-size="14" fill="#7c7c85">FASTAPI · REACT · POSTGRESQL · LLM ENRICHMENT</text>
+  <line x1="0" y1="234" x2="1150" y2="234" stroke="#20202a" stroke-width="1"/>
+
+  <text x="0" y="278" font-size="21" fill="#ffffff" font-weight="bold">02 / PMIS</text>
+  <text x="0" y="309" font-size="17" fill="#b7b7bf">Smart project &amp; scheme allocation engine, built for a Ministry of</text>
+  <text x="0" y="334" font-size="17" fill="#b7b7bf">Corporate Affairs problem statement — Aadhaar KYC, voice intake.</text>
+  <text x="0" y="362" font-size="14" fill="#7c7c85">FASTAPI · NEXT.JS · POSTGRESQL · GROQ</text>
+  <line x1="0" y1="390" x2="1150" y2="390" stroke="#20202a" stroke-width="1"/>
+
+  <text x="0" y="434" font-size="21" fill="#ffffff" font-weight="bold">03 / CAMPUSHIRE ADVISOR</text>
+  <text x="0" y="465" font-size="17" fill="#b7b7bf">AI hiring assistant that matches candidates to roles and streamlines</text>
+  <text x="0" y="490" font-size="17" fill="#b7b7bf">campus recruitment workflows.</text>
+  <text x="0" y="518" font-size="14" fill="#7c7c85">REACT · FASTAPI</text>
+  <line x1="0" y1="546" x2="1150" y2="546" stroke="#20202a" stroke-width="1"/>
+
+  <text x="0" y="590" font-size="21" fill="#ffffff" font-weight="bold">04 / BITCOIN TRADER SENTIMENT ANALYSIS</text>
+  <text x="0" y="621" font-size="17" fill="#b7b7bf">Statistical pipeline correlating Fear &amp; Greed Index with trader</text>
+  <text x="0" y="646" font-size="17" fill="#b7b7bf">performance — hypothesis testing, logistic regression.</text>
+  <text x="0" y="674" font-size="14" fill="#7c7c85">PYTHON · PANDAS · STATISTICS</text>
+  <line x1="0" y1="702" x2="1150" y2="702" stroke="#20202a" stroke-width="1"/>
+
+  <text x="0" y="746" font-size="21" fill="#ffffff" font-weight="bold">05 / DOC-QA-RAG</text>
+  <text x="0" y="777" font-size="17" fill="#b7b7bf">Retrieval-augmented Q&amp;A system, built manually in raw Python before</text>
+  <text x="0" y="802" font-size="17" fill="#b7b7bf">layering in LangChain. <tspan fill="#3ddc84">(in progress)</tspan></text>
 </svg>
