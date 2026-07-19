@@ -108,6 +108,7 @@
   <rect x="0" y="650" width="1150" height="290" fill="none" stroke="var(--rule)" stroke-width="1"/>
   <text x="20" y="684" font-size="15" letter-spacing="1" fill="var(--bone)">CONTRIBUTION TELEMETRY</text>
   <line x1="20" y1="700" x2="1130" y2="700" stroke="#20202a" stroke-width="1"/>
-  <text x="575" y="820" font-size="14" fill="var(--dim)" text-anchor="middle">chart populates once you paste your real daily contribution counts —</text>
-  <text x="575" y="844" font-size="14" fill="var(--dim)" text-anchor="middle">send them over and I'll draw the curve to match, same as before.</text>
+  <g class="mono">
+    {{CONTRIB_CHART}}
+  </g>
 </svg>
