@@ -1,0 +1,29 @@
+<svg viewBox="0 0 1000 200" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Timeline">
+  <style>
+    :root { --bone: #444444; --muted: #888888; --accent: #555555; --rule: #C0C0C0; }
+    @media (prefers-color-scheme: dark) { :root { --bone: #DDDDDD; --muted: #777777; --accent: #AAAAAA; --rule: #444444; } }
+    .mono { font-family: ui-monospace, "SFMono-Regular", "SF Mono", Menlo, Consolas, "Liberation Mono", monospace; }
+    .axis { stroke: var(--rule); stroke-width: 1; stroke-dasharray: 900; stroke-dashoffset: 900; animation: draw 2s cubic-bezier(.6,0,.2,1) forwards; }
+    @keyframes draw { to { stroke-dashoffset: 0; } }
+    .m { opacity: 0; animation: rise .7s cubic-bezier(.2,.7,.2,1) forwards; }
+    @keyframes rise { from{opacity:0;transform:translateY(8px)} to{opacity:1;transform:translateY(0)} }
+    .m1{animation-delay:.4s}.m2{animation-delay:.9s}.m3{animation-delay:1.4s}
+    @media (prefers-reduced-motion: reduce) { .axis,.m { animation: none; } .axis{stroke-dashoffset:0} .m{opacity:1} }
+  </style>
+  <line class="axis" x1="48" y1="100" x2="952" y2="100"/>
+  <g class="m m1">
+    <circle cx="200" cy="100" r="4" fill="var(--bone)"/>
+    <text fill="var(--accent)" class="mono" x="200" y="78" font-size="12" text-anchor="middle">2024</text>
+    <text fill="var(--bone)" class="mono" x="200" y="122" font-size="11" text-anchor="middle">started coding · first commit</text>
+  </g>
+  <g class="m m2">
+    <circle cx="580" cy="100" r="4" fill="var(--bone)"/>
+    <text fill="var(--accent)" class="mono" x="580" y="78" font-size="12" text-anchor="middle">2025</text>
+    <text fill="var(--bone)" class="mono" x="580" y="122" font-size="11" text-anchor="middle">coding regularly</text>
+  </g>
+  <g class="m m3">
+    <circle cx="900" cy="100" r="4" fill="var(--accent)"/>
+    <text fill="var(--accent)" class="mono" x="900" y="78" font-size="12" text-anchor="middle">NOW</text>
+    <text fill="var(--bone)" class="mono" x="900" y="122" font-size="11" text-anchor="middle">building &amp; job hunting</text>
+  </g>
+</svg>
