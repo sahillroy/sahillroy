@@ -8,16 +8,5 @@
 <img src="assets/whoami.svg" alt="About Sahil"/>
 <img src="assets/projects.svg" alt="Projects"/>
 <img src="assets/telemetry.svg" alt="Telemetry"/>
-<div align="center">
-<table>
-<tr>
-<td><img src="https://github-readme-stats.vercel.app/api?username=sahillroy&show_icons=true&theme=default&hide_border=true" alt="GitHub Stats"/></td>
-<td><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sahillroy&layout=compact&theme=default&hide_border=true" alt="Top Languages"/></td>
-</tr>
-<tr>
-<td colspan="2"><img src="https://github-readme-streak-stats.herokuapp.com/?user=sahillroy&theme=default&hide_border=true" alt="Streak Stats"/></td>
-</tr>
-</table>
-</div>
 <img src="assets/route.svg" alt="The Route"/>
 <img src="assets/stack.svg" alt="Stack"/>
