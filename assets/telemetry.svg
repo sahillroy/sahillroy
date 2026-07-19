@@ -28,10 +28,10 @@
   <rect width="1150" height="1000" fill="#0d1117"/>
 
   <!-- header (once) -->
-  <text x="0" y="56" font-size="62" fill="#ffffff" font-weight="bold">03</text>
-  <text x="90" y="48" font-size="20" letter-spacing="3" fill="#e6e6ec">TELEMETRY</text>
+  <text x="0" y="46" font-size="44" fill="#ffffff" font-weight="bold">03</text>
+  <text x="68" y="40" font-size="20" letter-spacing="3" fill="#e6e6ec">TELEMETRY</text>
   <line class="reveal" x1="270" y1="40" x2="990" y2="40" stroke="#c9c9d1" stroke-width="1"/>
-  <text x="1150" y="48" font-size="13" fill="#6f6f78" text-anchor="end">~/03-telemetry</text>
+  <text x="1150" y="40" font-size="13" fill="#6f6f78" text-anchor="end">~/03-telemetry</text>
 
   <!-- SECTION 1: repository overview + activity -->
   <rect x="0" y="90" width="360" height="270" fill="none" stroke="var(--rule)" stroke-width="1"/>
