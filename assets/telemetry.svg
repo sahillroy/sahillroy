@@ -53,14 +53,14 @@
   <line x1="890" y1="170" x2="890" y2="330" stroke="#2a2a33" stroke-width="1"/>
 
   <g class="rise n1">
-    <text x="410" y="240" font-size="44" fill="#ffffff">460</text>
+    <text x="410" y="240" font-size="44" fill="#ffffff">463</text>
     <text x="410" y="268" font-size="12" fill="var(--muted)" letter-spacing="1.5">TOTAL CONTRIBUTIONS</text>
     <text x="410" y="286" font-size="10.5" fill="var(--dim)">Feb 7, 2024 – present</text>
   </g>
   <g class="rise n2">
-    <text x="650" y="240" font-size="44" fill="#ffffff">0</text>
+    <text x="650" y="240" font-size="44" fill="#ffffff">6</text>
     <text x="650" y="268" font-size="12" fill="var(--muted)" letter-spacing="1.5">CURRENT STREAK</text>
-    <text x="650" y="286" font-size="10.5" fill="var(--dim)">—</text>
+    <text x="650" y="286" font-size="10.5" fill="var(--dim)">Aug 16 – Aug 21</text>
   </g>
   <g class="rise n3">
     <text x="890" y="240" font-size="44" fill="#ffffff">9</text>
@@ -116,8 +116,8 @@
     <line x1="60" y1="740.0" x2="1090" y2="740.0" stroke="var(--rule)" stroke-width="1" stroke-dasharray="3 3" opacity=".35"/>
     <text fill="var(--dim)" x="45" y="744.0" font-size="10" text-anchor="end">14</text>
     <line x1="60" y1="900" x2="1090" y2="900" stroke="var(--rule)" stroke-width="1"/>
-    <polyline points="60.0,740.0 95.5,877.1 131.0,762.9 166.6,820.0 202.1,900.0 237.6,900.0 273.1,900.0 308.6,900.0 344.1,900.0 379.7,900.0 415.2,900.0 450.7,877.1 486.2,900.0 521.7,888.6 557.2,900.0 592.8,900.0 628.3,900.0 663.8,900.0 699.3,900.0 734.8,820.0 770.3,900.0 805.9,854.3 841.4,820.0 876.9,900.0 912.4,762.9 947.9,797.1 983.4,854.3 1019.0,854.3 1054.5,877.1 1090.0,900.0" stroke="var(--accent)" stroke-width="1.5" fill="none"/>
-    <circle cx="1090.0" cy="900.0" r="3" fill="var(--accent)"/>
+    <polyline points="60.0,740.0 95.5,877.1 131.0,762.9 166.6,820.0 202.1,900.0 237.6,900.0 273.1,900.0 308.6,900.0 344.1,900.0 379.7,900.0 415.2,900.0 450.7,877.1 486.2,900.0 521.7,888.6 557.2,900.0 592.8,900.0 628.3,900.0 663.8,900.0 699.3,900.0 734.8,820.0 770.3,900.0 805.9,854.3 841.4,820.0 876.9,900.0 912.4,762.9 947.9,797.1 983.4,854.3 1019.0,854.3 1054.5,877.1 1090.0,865.7" stroke="var(--accent)" stroke-width="1.5" fill="none"/>
+    <circle cx="1090.0" cy="865.7" r="3" fill="var(--accent)"/>
     <text fill="var(--dim)" x="60.0" y="920" font-size="9" text-anchor="middle">23</text>
     <text fill="var(--dim)" x="166.6" y="920" font-size="9" text-anchor="middle">26</text>
     <text fill="var(--dim)" x="273.1" y="920" font-size="9" text-anchor="middle">29</text>
