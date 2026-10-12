@@ -53,14 +53,14 @@
   <line x1="890" y1="170" x2="890" y2="330" stroke="#2a2a33" stroke-width="1"/>
 
   <g class="rise n1">
-    <text x="410" y="240" font-size="44" fill="#ffffff">844</text>
+    <text x="410" y="240" font-size="44" fill="#ffffff">850</text>
     <text x="410" y="268" font-size="12" fill="var(--muted)" letter-spacing="1.5">TOTAL CONTRIBUTIONS</text>
     <text x="410" y="286" font-size="10.5" fill="var(--dim)">Feb 7, 2024 – present</text>
   </g>
   <g class="rise n2">
-    <text x="650" y="240" font-size="44" fill="#ffffff">0</text>
+    <text x="650" y="240" font-size="44" fill="#ffffff">7</text>
     <text x="650" y="268" font-size="12" fill="var(--muted)" letter-spacing="1.5">CURRENT STREAK</text>
-    <text x="650" y="286" font-size="10.5" fill="var(--dim)">—</text>
+    <text x="650" y="286" font-size="10.5" fill="var(--dim)">Oct 06 – Oct 12</text>
   </g>
   <g class="rise n3">
     <text x="890" y="240" font-size="44" fill="#ffffff">9</text>
@@ -112,12 +112,12 @@
     <line x1="60" y1="900.0" x2="1090" y2="900.0" stroke="var(--rule)" stroke-width="1" stroke-dasharray="3 3" opacity=".35"/>
     <text fill="var(--dim)" x="45" y="904.0" font-size="10" text-anchor="end">0</text>
     <line x1="60" y1="820.0" x2="1090" y2="820.0" stroke="var(--rule)" stroke-width="1" stroke-dasharray="3 3" opacity=".35"/>
-    <text fill="var(--dim)" x="45" y="824.0" font-size="10" text-anchor="end">61</text>
+    <text fill="var(--dim)" x="45" y="824.0" font-size="10" text-anchor="end">62</text>
     <line x1="60" y1="740.0" x2="1090" y2="740.0" stroke="var(--rule)" stroke-width="1" stroke-dasharray="3 3" opacity=".35"/>
-    <text fill="var(--dim)" x="45" y="744.0" font-size="10" text-anchor="end">122</text>
+    <text fill="var(--dim)" x="45" y="744.0" font-size="10" text-anchor="end">123</text>
     <line x1="60" y1="900" x2="1090" y2="900" stroke="var(--rule)" stroke-width="1"/>
-    <polyline points="60.0,879.0 95.5,873.8 131.0,896.1 166.6,900.0 202.1,900.0 237.6,900.0 273.1,900.0 308.6,894.8 344.1,900.0 379.7,898.7 415.2,898.7 450.7,900.0 486.2,844.9 521.7,885.6 557.2,854.1 592.8,894.8 628.3,883.0 663.8,886.9 699.3,900.0 734.8,900.0 770.3,900.0 805.9,873.8 841.4,900.0 876.9,896.1 912.4,896.1 947.9,897.4 983.4,873.8 1019.0,881.6 1054.5,740.0 1090.0,900.0" stroke="var(--accent)" stroke-width="1.5" fill="none"/>
-    <circle cx="1090.0" cy="900.0" r="3" fill="var(--accent)"/>
+    <polyline points="60.0,879.2 95.5,874.0 131.0,896.1 166.6,900.0 202.1,900.0 237.6,900.0 273.1,900.0 308.6,894.8 344.1,900.0 379.7,898.7 415.2,898.7 450.7,900.0 486.2,845.4 521.7,885.7 557.2,854.5 592.8,894.8 628.3,883.1 663.8,887.0 699.3,900.0 734.8,900.0 770.3,900.0 805.9,874.0 841.4,900.0 876.9,896.1 912.4,896.1 947.9,897.4 983.4,874.0 1019.0,881.8 1054.5,740.0 1090.0,893.5" stroke="var(--accent)" stroke-width="1.5" fill="none"/>
+    <circle cx="1090.0" cy="893.5" r="3" fill="var(--accent)"/>
     <text fill="var(--dim)" x="60.0" y="920" font-size="9" text-anchor="middle">13</text>
     <text fill="var(--dim)" x="166.6" y="920" font-size="9" text-anchor="middle">16</text>
     <text fill="var(--dim)" x="273.1" y="920" font-size="9" text-anchor="middle">19</text>
