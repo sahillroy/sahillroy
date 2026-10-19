@@ -58,9 +58,9 @@
     <text x="410" y="286" font-size="10.5" fill="var(--dim)">Feb 7, 2024 – present</text>
   </g>
   <g class="rise n2">
-    <text x="650" y="240" font-size="44" fill="#ffffff">4</text>
+    <text x="650" y="240" font-size="44" fill="#ffffff">0</text>
     <text x="650" y="268" font-size="12" fill="var(--muted)" letter-spacing="1.5">CURRENT STREAK</text>
-    <text x="650" y="286" font-size="10.5" fill="var(--dim)">Oct 15 – Oct 18</text>
+    <text x="650" y="286" font-size="10.5" fill="var(--dim)">—</text>
   </g>
   <g class="rise n3">
     <text x="890" y="240" font-size="44" fill="#ffffff">9</text>
@@ -116,19 +116,19 @@
     <line x1="60" y1="740.0" x2="1090" y2="740.0" stroke="var(--rule)" stroke-width="1" stroke-dasharray="3 3" opacity=".35"/>
     <text fill="var(--dim)" x="45" y="744.0" font-size="10" text-anchor="end">128</text>
     <line x1="60" y1="900" x2="1090" y2="900" stroke="var(--rule)" stroke-width="1"/>
-    <polyline points="60.0,900.0 95.5,895.0 131.0,900.0 166.6,898.8 202.1,898.8 237.6,900.0 273.1,847.5 308.6,886.2 344.1,856.2 379.7,895.0 415.2,883.8 450.7,887.5 486.2,900.0 521.7,900.0 557.2,900.0 592.8,875.0 628.3,900.0 663.8,896.2 699.3,896.2 734.8,897.5 770.3,875.0 805.9,882.5 841.4,740.0 876.9,885.0 912.4,898.8 947.9,900.0 983.4,896.2 1019.0,898.8 1054.5,897.5 1090.0,867.5" stroke="var(--accent)" stroke-width="1.5" fill="none"/>
-    <circle cx="1090.0" cy="867.5" r="3" fill="var(--accent)"/>
-    <text fill="var(--dim)" x="60.0" y="920" font-size="9" text-anchor="middle">19</text>
-    <text fill="var(--dim)" x="166.6" y="920" font-size="9" text-anchor="middle">22</text>
-    <text fill="var(--dim)" x="273.1" y="920" font-size="9" text-anchor="middle">25</text>
-    <text fill="var(--dim)" x="379.7" y="920" font-size="9" text-anchor="middle">28</text>
-    <text fill="var(--dim)" x="486.2" y="920" font-size="9" text-anchor="middle">1</text>
-    <text fill="var(--dim)" x="592.8" y="920" font-size="9" text-anchor="middle">4</text>
-    <text fill="var(--dim)" x="699.3" y="920" font-size="9" text-anchor="middle">7</text>
-    <text fill="var(--dim)" x="805.9" y="920" font-size="9" text-anchor="middle">10</text>
-    <text fill="var(--dim)" x="912.4" y="920" font-size="9" text-anchor="middle">13</text>
-    <text fill="var(--dim)" x="1019.0" y="920" font-size="9" text-anchor="middle">16</text>
-    <text fill="var(--dim)" x="1090.0" y="920" font-size="9" text-anchor="middle">18</text>
+    <polyline points="60.0,895.0 95.5,900.0 131.0,898.8 166.6,898.8 202.1,900.0 237.6,847.5 273.1,886.2 308.6,856.2 344.1,895.0 379.7,883.8 415.2,887.5 450.7,900.0 486.2,900.0 521.7,900.0 557.2,875.0 592.8,900.0 628.3,896.2 663.8,896.2 699.3,897.5 734.8,875.0 770.3,882.5 805.9,740.0 841.4,885.0 876.9,898.8 912.4,900.0 947.9,896.2 983.4,898.8 1019.0,897.5 1054.5,867.5 1090.0,900.0" stroke="var(--accent)" stroke-width="1.5" fill="none"/>
+    <circle cx="1090.0" cy="900.0" r="3" fill="var(--accent)"/>
+    <text fill="var(--dim)" x="60.0" y="920" font-size="9" text-anchor="middle">20</text>
+    <text fill="var(--dim)" x="166.6" y="920" font-size="9" text-anchor="middle">23</text>
+    <text fill="var(--dim)" x="273.1" y="920" font-size="9" text-anchor="middle">26</text>
+    <text fill="var(--dim)" x="379.7" y="920" font-size="9" text-anchor="middle">29</text>
+    <text fill="var(--dim)" x="486.2" y="920" font-size="9" text-anchor="middle">2</text>
+    <text fill="var(--dim)" x="592.8" y="920" font-size="9" text-anchor="middle">5</text>
+    <text fill="var(--dim)" x="699.3" y="920" font-size="9" text-anchor="middle">8</text>
+    <text fill="var(--dim)" x="805.9" y="920" font-size="9" text-anchor="middle">11</text>
+    <text fill="var(--dim)" x="912.4" y="920" font-size="9" text-anchor="middle">14</text>
+    <text fill="var(--dim)" x="1019.0" y="920" font-size="9" text-anchor="middle">17</text>
+    <text fill="var(--dim)" x="1090.0" y="920" font-size="9" text-anchor="middle">19</text>
     <text fill="var(--dim)" x="60" y="944" font-size="11" letter-spacing="1.5">last 30 days</text>
   </g>
 </svg>
